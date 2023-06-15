@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grab your visa</title>
+</head>
+<body>
+    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .visa-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                max-width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Visa Consultancy</h1>
+        <div class="visa-form">
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country">
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="passport">Passport Number:</label>
+                <input type="text" id="passport">
+            </div>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone">
+            </div>
+            <button onclick="submitForm()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            var country = document.getElementById("country").value;
+            var passport = document.getElementById("passport").value;
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+
+            // Do something with the form data (e.g., send it to a server using AJAX)
+
+            alert("Form submitted successfully!");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint</title>
+    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+</head>
+<body>
+  <style>
+    /* Imprint */
+
+.headz {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.headz h1 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--body-color);
+}
+
+.mains {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.contact-button{
+  color: var(--second-color);
+}
+
+.mains section {
+  margin-bottom: 20px;
+}
+
+.mains section h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.mains section p {
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+.mains section strong {
+  font-weight: bold;
+}
+
+.foots {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+  </style>
+    <header class="headz">
+        <h1>Imprint</h1>
+
+        <a href="index.html">Home</a>
+      </header>
+    
+      <main class="mains">
+        <section>
+          <h2>About TKE Consultancy</h2>
+          <p>TKE Consultancy is a leading agency providing comprehensive insurance, travel, and visa consultancy services. We specialize in offering premium services, ensuring customer satisfaction, and delivering outstanding outcomes for our clients.</p>
+        </section>
+    
+        <section>
+          <h2>Contact Information</h2>
+          <p>If you have any questions, concerns, or inquiries, please don't hesitate to contact us using the details provided below:</p>
+    
+          <p><strong>Company Name:</strong> TKE Consultancy</p>
+          <p><strong>Address:</strong> Moi Avenue, Nairobi, Kenya</p>
+          <p><strong>Email:</strong> info@tkeconsultancy.com</p>
+          <p><strong>Phone:</strong> +254 123-456-7890</p>
+    
+          <p id="contact-message"></p>
+          <button id="contact-button">Send Message</button>
+        </section>
+    
+        <section>
+          <h2>Legal Notice</h2>
+          <p>TKE Consultancy is a registered and licensed agency in accordance with the laws and regulations of the relevant jurisdiction.</p>
+          <p><strong>Registered Office:</strong> 123 Main Street, City, Country</p>
+          <p><strong>Registration Number:</strong> ABC123456</p>
+          <p><strong>Managing Director:</strong> John Doe</p>
+        </section>
+    
+        <section>
+          <h2>Disclaimer</h2>
+          <p>The information provided on this website is for general informational purposes only. While we strive to keep the information up to date and accurate, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the website or the information, products, services, or related graphics contained on the website for any purpose.</p>
+          <p>Any reliance you place on such information is therefore strictly at your own risk. In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.</p>
+        </section>
+      </main>
+
+      <footer class="foots">
+        <p>&copy; 2023 TKE Consultancy. All rights reserved.</p>
+      </footer>
+    
+      <script>
+        document.getElementById("contact-button").addEventListener("click", function () {
+          var message = prompt("Please enter your message:");
+          if (message) {
+            document.getElementById("contact-message").textContent = "Your message has been sent: " + message;
+          } else {
+            document.getElementById("contact-message").textContent = "No message was entered.";
+          }
+        });
+      </script>
+
+
+      <script defer src="assets/js/main.js"></script>
+    
+</body>
+</html>

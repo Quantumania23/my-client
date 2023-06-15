@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours & Travels</title>
+</head>
+<body>
+    <style>
+        /* Basic styling */
+    
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          transition: background-color 0.3s ease;
+        }
+    
+        header, section, footer {
+          padding: 20px;
+        }
+    
+        h1, h2, h3 {
+          color: #333;
+        }
+    
+        ul {
+          padding-left: 20px;
+        }
+    
+        /* Additional styling */
+    
+        header {
+          background-color: #f2f2f2;
+          text-align: center;
+        }
+    
+        .service {
+          margin-bottom: 20px;
+          position: relative;
+        }
+    
+        .transform-image {
+          width: 100%;
+          height: auto;
+          transition: transform 0.3s ease;
+        }
+    
+        .transform-image:hover {
+          transform: scale(1.1);
+        }
+    
+        footer {
+          background-color: #f2f2f2;
+          text-align: center;
+        }
+    
+        #mode-toggle {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          padding: 10px 20px;
+          background-color: #f2f2f2;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+    
+        #mode-toggle:hover {
+          background-color: #ddd;
+        }
+    
+        /* Responsive styling */
+    
+        @media (max-width: 768px) {
+          .service {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <header>
+        <h1>TKE Consultancy Tours and Travel</h1>
+      </header>
+      
+      <section id="services">
+        <h2>Our Services</h2>
+        
+        <div class="service">
+          <h3>Customized Tour Packages</h3>
+          <p>We believe that every traveler is different, and that's why we offer customized tour packages...</p>
+          <img class="transform-image" src="customized-packages.jpg" alt="Customized Tour Packages">
+        </div>
+        
+        <div class="service">
+          <h3>Group Tours</h3>
+          <p>If you enjoy traveling with like-minded individuals and want to explore the world together...</p>
+          <img class="transform-image" src="group-tours.jpg" alt="Group Tours">
+        </div>
+        
+        <div class="service">
+          <h3>Adventure Travel</h3>
+          <p>Are you an adrenaline junkie seeking thrilling experiences? Our adventure travel packages...</p>
+          <img class="transform-image" src="adventure-travel.jpg" alt="Adventure Travel">
+        </div>
+        
+        <div class="service">
+          <h3>Luxury Travel</h3>
+          <p>Indulge yourself in luxury and create memories that will last a lifetime. Our luxury travel packages...</p>
+          <img class="transform-image" src="luxury-travel.jpg" alt="Luxury Travel">
+        </div>
+        
+        <div class="service">
+          <h3>Honeymoon Packages</h3>
+          <p>Celebrate your love in the most romantic destinations around the world. Our honeymoon packages...</p>
+          <img class="transform-image" src="honeymoon-packages.jpg" alt="Honeymoon Packages">
+        </div>
+      </section>
+      
+      <section id="why-choose-us">
+        <h2>Why Choose TKE Consultancy Tours and Travel?</h2>
+        
+        <ul>
+          <li>Expert Guidance: Our travel consultants have extensive knowledge and experience...</li>
+          <li>Personalized Itineraries: We understand that every traveler is unique...</li>
+          <li>Seamless Experience: We take care of all the logistics, including accommodation, transportation, and activities...</li>
+          <li>24/7 Support: Our team is available round the clock to assist you during your trip...</li>
+          <li>Unforgettable Experiences: We strive to create travel experiences that go beyond the ordinary...</li>
+        </ul>
+      </section>
+      
+      <footer>
+        <p>Contact TKE Consultancy Tours and Travel today to start planning your dream vacation.</p>
+        <p>Let us transform your travel aspirations into a reality!</p>
+      </footer>
+      
+      <button id="mode-toggle" onclick="toggleMode()">Switch to Dark Mode</button>
+      
+      <script>
+        // Toggle between light and dark mode
+        function toggleMode() {
+          const body = document.body;
+          const modeToggle = document.getElementById("mode-toggle");
+          
+          body.classList.toggle("dark-mode");
+          modeToggle.textContent = body.classList.contains("dark-mode") ? "Switch to Light Mode" : "Switch to Dark Mode";
+        }
+      </script>
+</body>
+</html>
